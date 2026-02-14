@@ -1,12 +1,21 @@
-"use client";
-
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import ScrollToTop from "@/components/ScrollToTop";
+import { Providers } from "./providers";
 import { Inter } from "next/font/google";
+import { Metadata } from "next";
 import "../styles/index.css";
 
 const inter = Inter({ subsets: ["latin"] });
+
+export const metadata: Metadata = {
+  title: "Orion App Tech - Software Development Agency",
+  description: "Leading software development agency specializing in web, mobile, AI/ML, and game development solutions.",
+  icons: {
+    icon: "/logo.png",
+    apple: "/logo.png",
+  },
+};
 
 export default function RootLayout({
   children,
@@ -15,12 +24,6 @@ export default function RootLayout({
 }) {
   return (
     <html suppressHydrationWarning lang="en">
-      <head>
-        <link rel="icon" href="/logo.png" />
-        <link rel="apple-touch-icon" href="/logo.png" />
-        <title>Orion App Tech - Software Development Agency</title>
-      </head>
-
       <body className={`bg-[#FCFCFC] dark:bg-black ${inter.className}`}>
         <Providers>
           <div className="isolate">
@@ -34,6 +37,4 @@ export default function RootLayout({
     </html>
   );
 }
-
-import { Providers } from "./providers";
 
