@@ -144,7 +144,7 @@ const Header = () => {
                                 menuItem.megaMenu ? "lg:w-[900px] lg:left-1/2 lg:-translate-x-1/2" : "lg:w-[250px] lg:left-0"
                               } lg:p-4 lg:opacity-0 lg:shadow-lg lg:group-hover:visible lg:group-hover:top-full ${
                                 openIndex === index ? "block" : "hidden"
-                              }`}
+                              } max-h-[calc(100vh-200px)] overflow-y-auto lg:max-h-none lg:overflow-visible`}
                             >
                               {menuItem.megaMenu ? (
                                 <div className="lg:flex lg:gap-0">
@@ -166,7 +166,7 @@ const Header = () => {
                                               <FontAwesomeIcon icon={faChevronRight} className="w-4 h-4" />
                                             </Link>
                                             {/* Mobile nested submenu */}
-                                            <div className={`ml-4 lg:hidden ${mobileNestedOpen === subIndex ? "block" : "hidden"}`}>
+                                            <div className={`ml-4 lg:hidden max-h-[300px] overflow-y-auto ${mobileNestedOpen === subIndex ? "block" : "hidden"}`}>
                                               {submenuItem.submenu.map((nestedItem, nestedIndex) => (
                                                 <Link
                                                   href={nestedItem.path}
