@@ -84,6 +84,13 @@ const Header = () => {
             {/* Center Navigation */}
             <div className="flex-1 flex items-center justify-center px-4">
               <div className="flex items-center">
+                {/* Mobile Contact Us Button - Shows before hamburger */}
+                <Link
+                  href="/contact"
+                  className="lg:hidden absolute top-1/2 right-16 translate-y-[-50%] rounded-lg border-2 border-primary px-4 py-2 text-sm font-medium text-primary transition hover:bg-primary hover:text-white"
+                >
+                  Contact Us
+                </Link>
                 <button
                   onClick={navbarToggleHandler}
                   id="navbarToggler"
@@ -106,6 +113,10 @@ const Header = () => {
                     }`}
                   />
                 </button>
+                {/* Mobile Theme Toggler - Right side of hamburger */}
+                <div className="absolute top-1/2 right-[-40px] translate-y-[-50%] lg:hidden">
+                  <ThemeToggler />
+                </div>
                 <nav
                   id="navbarCollapse"
                   className={`navbar border-body-color/50 dark:border-body-color/20 dark:bg-dark absolute right-0 z-30 w-[250px] rounded border-[.5px] bg-white px-6 py-4 duration-300 lg:visible lg:static lg:w-auto lg:border-none lg:!bg-transparent lg:p-0 lg:opacity-100 ${
@@ -248,7 +259,7 @@ const Header = () => {
               >
                 Contact Us
               </Link>
-              <div>
+              <div className="hidden lg:block">
                 <ThemeToggler />
               </div>
             </div>
