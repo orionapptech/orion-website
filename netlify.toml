@@ -1,0 +1,23 @@
+# Netlify Configuration for Next.js
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+# Environment Variables (Set these in Netlify Dashboard for production)
+# EMAIL_USER = support@orionapptech.com
+# EMAIL_PASS = Incorrects@31795
+# SMTP_HOST = smtp.hostinger.com
+# SMTP_PORT = 465
+
+# Security Headers
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "geolocation=(), microphone=(), camera=()"
+
+# Next.js specific settings
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
