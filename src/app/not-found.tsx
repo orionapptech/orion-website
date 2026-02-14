@@ -1,8 +1,4 @@
-"use client";
-
 import Link from "next/link";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHome, faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 
 export default function NotFound() {
   return (
@@ -40,7 +36,6 @@ export default function NotFound() {
                   />
                   <mask
                     id="mask0_116:1137"
-                    style={{ maskType: "alpha" }}
                     maskUnits="userSpaceOnUse"
                     x="159"
                     y="13"
@@ -157,23 +152,21 @@ export default function NotFound() {
                 Page Not Found
               </h3>
               <p className="mb-10 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                Sorry, the page you are looking for doesn&#39;t exist or has been moved.
+                Sorry, the page you are looking for doesn&apos;t exist or has been moved.
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <Link
                   href="/"
-                  className="rounded-lg bg-primary px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80 inline-flex items-center gap-2"
+                  className="rounded-lg bg-primary px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
                 >
-                  <FontAwesomeIcon icon={faHome} className="w-5 h-5" />
-                  Back to Home
+                  ← Back to Home
                 </Link>
-                <button
-                  onClick={() => window.history.back()}
-                  className="rounded-lg border-2 border-primary px-8 py-4 text-base font-semibold text-primary duration-300 ease-in-out hover:bg-primary hover:text-white inline-flex items-center gap-2"
+                <Link
+                  href="/contact"
+                  className="rounded-lg border-2 border-primary px-8 py-4 text-base font-semibold text-primary duration-300 ease-in-out hover:bg-primary hover:text-white"
                 >
-                  <FontAwesomeIcon icon={faArrowLeft} className="w-5 h-5" />
-                  Go Back
-                </button>
+                  Contact Us
+                </Link>
               </div>
             </div>
           </div>
