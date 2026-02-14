@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 export default function NotFound() {
   return (
     <section className="relative z-10 pb-16 pt-36 md:pb-20 lg:pb-28 lg:pt-[180px]">
@@ -155,18 +153,18 @@ export default function NotFound() {
                 Sorry, the page you are looking for doesn&apos;t exist or has been moved.
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <Link
+                <a
                   href="/"
                   className="rounded-lg bg-primary px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
                 >
                   ← Back to Home
-                </Link>
-                <Link
+                </a>
+                <a
                   href="/contact"
                   className="rounded-lg border-2 border-primary px-8 py-4 text-base font-semibold text-primary duration-300 ease-in-out hover:bg-primary hover:text-white"
                 >
                   Contact Us
-                </Link>
+                </a>
               </div>
             </div>
           </div>
