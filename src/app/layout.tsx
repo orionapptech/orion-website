@@ -1,6 +1,6 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import ScrollToTop from "@/components/ScrollToTop";
+import PhoneWidget from "@/components/Common/PhoneWidget";
 import { Providers } from "./providers";
 import { Inter } from "next/font/google";
 import { Metadata } from "next";
@@ -31,7 +31,7 @@ export default function RootLayout({
             {children}
             <Footer />
           </div>
-          <ScrollToTop />
+          <PhoneWidget />
         </Providers>
       </body>
     </html>

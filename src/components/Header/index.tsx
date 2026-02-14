@@ -5,7 +5,6 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown, faChevronRight, faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
-import ThemeToggler from "./ThemeToggler";
 import menuData from "./menuData";
 
 const Header = () => {
@@ -113,10 +112,6 @@ const Header = () => {
                     }`}
                   />
                 </button>
-                {/* Mobile Theme Toggler - Right side of hamburger */}
-                <div className="absolute top-1/2 right-[-40px] translate-y-[-50%] lg:hidden">
-                  <ThemeToggler />
-                </div>
                 <nav
                   id="navbarCollapse"
                   className={`navbar border-body-color/50 dark:border-body-color/20 dark:bg-dark absolute right-0 z-30 w-[250px] rounded border-[.5px] bg-white px-6 py-4 duration-300 lg:visible lg:static lg:w-auto lg:border-none lg:!bg-transparent lg:p-0 lg:opacity-100 ${
@@ -252,16 +247,13 @@ const Header = () => {
             </div>
             
             {/* Right Side Contact Us */}
-            <div className="flex items-center justify-end gap-4 pr-16 lg:pr-0">
+            <div className="flex items-center justify-end pr-16 lg:pr-0">
               <Link
                 href="/contact"
                 className="hidden whitespace-nowrap rounded-lg bg-primary px-6 py-3 text-base font-medium text-white transition hover:bg-primary/90 lg:block"
               >
                 Contact Us
               </Link>
-              <div className="hidden lg:block">
-                <ThemeToggler />
-              </div>
             </div>
           </div>
         </div>

@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faPhone, faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
-import { faFacebookF, faTwitter, faYoutube, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
   return (
@@ -25,15 +24,15 @@ const Footer = () => {
           </div>
 
           {/* Main Footer Content */}
-          <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4 mb-12">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4 mb-12">
             {/* About & Quote Section */}
-            <div className="lg:col-span-2">
+            <div>
               <h3 className="mb-6 text-xl font-bold text-white">Why Choose Us</h3>
-              <p className="mb-6 text-base leading-relaxed text-gray-300 italic border-l-4 border-primary pl-4">
-                "We don't just build software, we engineer digital excellence. Your success is our mission, and innovation is our passion."
+              <p className="mb-4 text-sm leading-relaxed text-gray-300 italic border-l-4 border-primary pl-4">
+                "We engineer digital excellence. Your success is our mission."
               </p>
-              <p className="text-sm text-gray-400">
-                Building digital excellence with cutting-edge solutions. Your trusted technology partner with global presence in USA, India, and Netherlands.
+              <p className="text-xs text-gray-400">
+                Trusted technology partner with global presence.
               </p>
             </div>
 
@@ -69,6 +68,28 @@ const Footer = () => {
                 <li>
                   <Link href="/contact" className="text-gray-300 hover:text-primary duration-300 flex items-center gap-2">
                     <span className="text-primary">›</span> Contact
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
+            {/* Legal Links */}
+            <div>
+              <h3 className="mb-6 text-xl font-bold text-white">Legal</h3>
+              <ul className="space-y-3">
+                <li>
+                  <Link href="/privacy-policy" className="text-gray-300 hover:text-primary duration-300 flex items-center gap-2">
+                    <span className="text-primary">›</span> Privacy Policy
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/terms-and-conditions" className="text-gray-300 hover:text-primary duration-300 flex items-center gap-2">
+                    <span className="text-primary">›</span> Terms & Conditions
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/refund-policy" className="text-gray-300 hover:text-primary duration-300 flex items-center gap-2">
+                    <span className="text-primary">›</span> Refund & Cancellations
                   </Link>
                 </li>
               </ul>
@@ -110,58 +131,15 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Social Media & Copyright */}
+          {/* Copyright */}
           <div className="border-t border-white/10 pt-8">
-            <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-              {/* Social Links */}
-              <div className="flex items-center gap-4">
-                <a
-                  href="https://facebook.com"
-                  aria-label="Facebook"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex h-10 w-10 items-center justify-center rounded-full bg-white/5 text-gray-400 hover:bg-primary hover:text-white duration-300"
-                >
-                  <FontAwesomeIcon icon={faFacebookF} className="w-5 h-5" />
-                </a>
-                <a
-                  href="https://twitter.com"
-                  aria-label="Twitter"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex h-10 w-10 items-center justify-center rounded-full bg-white/5 text-gray-400 hover:bg-primary hover:text-white duration-300"
-                >
-                  <FontAwesomeIcon icon={faTwitter} className="w-5 h-5" />
-                </a>
-                <a
-                  href="https://youtube.com"
-                  aria-label="YouTube"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex h-10 w-10 items-center justify-center rounded-full bg-white/5 text-gray-400 hover:bg-primary hover:text-white duration-300"
-                >
-                  <FontAwesomeIcon icon={faYoutube} className="w-5 h-5" />
-                </a>
-                <a
-                  href="https://linkedin.com"
-                  aria-label="LinkedIn"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex h-10 w-10 items-center justify-center rounded-full bg-white/5 text-gray-400 hover:bg-primary hover:text-white duration-300"
-                >
-                  <FontAwesomeIcon icon={faLinkedinIn} className="w-5 h-5" />
-                </a>
-              </div>
-
-              {/* Copyright */}
-              <div className="text-center md:text-right">
-                <p className="text-gray-400 text-sm">
-                  © {new Date().getFullYear()} <span className="text-primary font-semibold">Orion App Tech</span>. All Rights Reserved.
-                </p>
-                <p className="text-gray-500 text-xs mt-1">
-                  Crafted with <span className="text-red-500">❤</span> for Digital Excellence
-                </p>
-              </div>
+            <div className="text-center">
+              <p className="text-gray-400 text-sm">
+                © {new Date().getFullYear()} <span className="text-primary font-semibold">Orion App Tech</span>. All Rights Reserved.
+              </p>
+              <p className="text-gray-500 text-xs mt-1">
+                Crafted with <span className="text-red-500">❤</span> for Digital Excellence
+              </p>
             </div>
           </div>
         </div>

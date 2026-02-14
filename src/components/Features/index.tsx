@@ -18,6 +18,29 @@ const Features = () => {
               <SingleFeature key={feature.id} feature={feature} />
             ))}
           </div>
+
+          {/* CTA Button */}
+          <div className="mt-16 flex justify-center">
+            <a
+              href="/contact"
+              className="inline-flex items-center justify-center gap-3 rounded-lg bg-primary px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/90 hover:shadow-lg hover:shadow-primary/30"
+            >
+              Get Started Today
+              <svg
+                className="h-5 w-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                />
+              </svg>
+            </a>
+          </div>
         </div>
       </section>
     </>

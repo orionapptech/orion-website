@@ -3,6 +3,7 @@ import Contact from "@/components/Contact";
 import Features from "@/components/Features";
 import Hero from "@/components/Hero";
 import Partners from "@/components/Partners";
+import ProjectsShowcase from "@/components/ProjectsShowcase";
 import Testimonials from "@/components/Testimonials";
 import { Metadata } from "next";
 
@@ -17,6 +18,7 @@ export default function Home() {
       <ScrollUp />
       <Hero />
       <Partners />
+      <ProjectsShowcase />
       <Features />
       <Testimonials />
       <Contact />
