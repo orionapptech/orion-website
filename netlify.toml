@@ -19,9 +19,7 @@
     Referrer-Policy = "strict-origin-when-cross-origin"
     Permissions-Policy = "geolocation=(), microphone=(), camera=()"
 
-# Redirects for SPA
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+# Essential Next.js Plugin for Netlify
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
 
