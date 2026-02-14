@@ -14,65 +14,26 @@ const Partners = () => {
           </h2>
         </div>
 
-        <div className="relative overflow-hidden">
-          {/* Gradient overlays for smooth fade effect */}
-          <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-gray-light dark:from-bg-color-dark to-transparent z-10"></div>
-          <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-gray-light dark:from-bg-color-dark to-transparent z-10"></div>
-
-          {/* Scrolling container */}
-          <div className="flex animate-scroll">
-            {/* First set of logos */}
+        <div className="relative">
+          {/* Logo grid - 2 rows x 4 columns */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 lg:gap-16 max-w-6xl mx-auto">
             {partners.map((partner) => (
               <div
                 key={`partner-${partner}`}
-                className="flex-shrink-0 mx-8 flex items-center justify-center"
+                className="flex items-center justify-center p-4"
               >
                 <Image
                   src={`/partners/${partner}.png`}
                   alt={`Partner ${partner}`}
-                  width={150}
-                  height={80}
-                  className="h-20 w-auto object-contain transition-all duration-300"
-                />
-              </div>
-            ))}
-            {/* Duplicate set for seamless loop */}
-            {partners.map((partner) => (
-              <div
-                key={`partner-duplicate-${partner}`}
-                className="flex-shrink-0 mx-8 flex items-center justify-center"
-              >
-                <Image
-                  src={`/partners/${partner}.png`}
-                  alt={`Partner ${partner}`}
-                  width={150}
-                  height={80}
-                  className="h-20 w-auto object-contain transition-all duration-300"
+                  width={200}
+                  height={120}
+                  className="w-full h-auto object-contain transition-all duration-300 hover:scale-110 brightness-110"
                 />
               </div>
             ))}
           </div>
         </div>
       </div>
-
-      <style jsx>{`
-        @keyframes scroll {
-          0% {
-            transform: translateX(0);
-          }
-          100% {
-            transform: translateX(-50%);
-          }
-        }
-
-        .animate-scroll {
-          animation: scroll 30s linear infinite;
-        }
-
-        .animate-scroll:hover {
-          animation-play-state: paused;
-        }
-      `}</style>
     </section>
   );
 };
