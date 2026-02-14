@@ -29,12 +29,12 @@ const Hero = () => {
 
                 <h1 className="animate-fade-in-up mb-5 text-4xl font-bold leading-tight text-black dark:text-white sm:text-5xl sm:leading-tight md:text-6xl md:leading-tight">
                   We Build Software That{" "}
-                  <span className="text-primary" style={{ textShadow: '0 0 20px rgba(74, 108, 247, 0.5), 0 0 40px rgba(74, 108, 247, 0.3)' }}>
+                  <span className="text-primary drop-shadow-[0_0_20px_rgba(74,108,247,0.5)]">
                     Powers Businesses
                   </span>
                 </h1>
                 <p className="animate-fade-in-up mb-8 text-base leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
-                  From startups to established enterprises, <span className="font-bold uppercase text-primary" style={{ textShadow: '0 0 20px rgba(74, 108, 247, 0.6), 0 0 30px rgba(74, 108, 247, 0.4)' }}>Orion App Tech</span> delivers scalable, 
+                  From startups to established enterprises, <span className="font-bold uppercase text-primary drop-shadow-[0_0_20px_rgba(74,108,247,0.6)]">Orion App Tech</span> delivers scalable, 
                   secure, and high-performance solutions that drive digital transformation across industries.
                 </p>
 
@@ -81,7 +81,6 @@ const Hero = () => {
                     <div
                       key={index}
                       className="glass-card hover-lift animate-scale-in rounded-xl p-6 text-center dark:glass-card-dark"
-                      style={{ animationDelay: `${index * 0.1}s` }}
                     >
                       <div className="mb-2 text-3xl font-bold gradient-text md:text-4xl">
                         {stat.value}

@@ -19,7 +19,7 @@ const Footer = () => {
               width={60}
               height={60}
             />
-            <h2 className="text-4xl font-bold uppercase text-primary md:text-5xl lg:text-6xl" style={{ textShadow: '0 0 30px rgba(74, 108, 247, 0.6), 0 0 60px rgba(74, 108, 247, 0.4)' }}>
+            <h2 className="text-4xl font-bold uppercase text-primary md:text-5xl lg:text-6xl drop-shadow-[0_0_30px_rgba(74,108,247,0.6)]">
               ORION APP TECH
             </h2>
           </div>
