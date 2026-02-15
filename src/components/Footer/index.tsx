@@ -123,8 +123,11 @@ const Footer = () => {
                 <li className="flex items-start gap-3 text-gray-300">
                   <FontAwesomeIcon icon={faPhone} className="w-5 h-5 text-primary mt-1" />
                   <div>
-                    <p className="text-sm text-gray-400">Response Time</p>
-                    <p>Within 8 Hours</p>
+                    <p className="text-sm text-gray-400 mb-2">Call Us</p>
+                    <a href="tel:3639990447" className="hover:text-primary duration-300 font-semibold">
+                      (363) 999-0447
+                    </a>
+                    <p className="text-xs text-gray-400 mt-1">Response within 8 hours</p>
                   </div>
                 </li>
               </ul>

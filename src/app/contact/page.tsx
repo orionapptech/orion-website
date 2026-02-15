@@ -434,10 +434,10 @@ const ContactPage = () => {
               {
                 icon: faPhone,
                 title: "Quick Call",
-                content: "Schedule a Call",
-                description: "15-min consultation",
+                content: "(363) 999-0447",
+                description: "Call us directly",
                 gradient: "from-green-500 to-green-600",
-                link: "/contact"
+                link: "tel:3639990447"
               },
               {
                 icon: faClock,

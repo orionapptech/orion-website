@@ -6,7 +6,7 @@ import { useState } from "react";
 
 const PhoneWidget = () => {
   const [isExpanded, setIsExpanded] = useState(false);
-  const phoneNumber = "1234567890";
+  const phoneNumber = "(363) 999-0447";
 
   return (
     <div className="fixed bottom-6 right-6 z-50">

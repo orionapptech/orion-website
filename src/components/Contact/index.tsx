@@ -332,10 +332,15 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="mb-2 text-lg font-semibold text-black dark:text-white">
-                    Response Time
+                    Call Us
                   </h4>
                   <p className="text-body-color dark:text-body-color-dark">
-                    Within 8 hours on business days
+                    <a href="tel:3639990447" className="hover:text-primary transition-colors">
+                      (363) 999-0447
+                    </a>
+                  </p>
+                  <p className="text-sm text-body-color dark:text-body-color-dark mt-1">
+                    Response within 8 hours
                   </p>
                 </div>
               </div>
