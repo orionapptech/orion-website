@@ -23,8 +23,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html suppressHydrationWarning lang="en">
-      <body className={`bg-[#FCFCFC] dark:bg-black ${inter.className}`}>
+    <html suppressHydrationWarning lang="en" className="dark">
+      <body className={`bg-black ${inter.className}`}>
         <Providers>
           <div className="isolate">
             <Header />
